@@ -1,0 +1,43 @@
+.Navbar {
+	height: 2.5rem;
+	display: grid;
+	grid-template-columns: 7.5rem auto 2.5rem 2rem;
+	align-content: center;
+}
+
+.Navbar > * {
+  align-self: center;
+  transition: 0.4s;
+}
+
+.Navbar > *:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.Navbar_Logo {
+	padding: 2% 0;
+  text-decoration: none;
+	font-family: 'Raleway', sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 1rem;
+	line-height: 1.5rem;
+}
+
+.Navbar_Logo .left {
+	color: #ffffff;
+	background: #121221;
+	border-radius: 4px;
+  padding: 0.5rem 0.25rem;
+}
+
+.Navbar_Logo .right {
+  color: #121221;
+	border-radius: 4px;
+  padding: 0.5rem 0.15rem;
+}
+
+.Navbar > :nth-last-child(1) {
+  text-align: center;
+}

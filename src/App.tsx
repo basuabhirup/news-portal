@@ -1,11 +1,18 @@
 import React from 'react'
-import Header from './components/Header/Header'
+import './App.css'
+import Navbar from './components/Navbar/Navbar'
+import Hero from './components/Hero/Hero'
+import LatestNews from './components/LatestNews/LatestNews'
+import Footer from './components/Footer/Footer'
 
 const App: React.FC = () => {
 	return (
-		<>
-			<Header />
-		</>
+		<div className="App">
+			<Navbar />
+      <Hero />
+      <LatestNews />
+      <Footer />
+		</div>
 	)
 }
 
