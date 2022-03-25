@@ -8,7 +8,7 @@ const HotTopics: React.FC = () => {
 
 	useEffect(() => {
 		let randomNum = Math.floor(Math.random() * 10)
-		setInterval(() => {
+		setTimeout(() => {
 			changeHotNews!(randomNum)
 		}, 5000)
 	}, [])
