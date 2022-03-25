@@ -22,5 +22,6 @@ export interface NewsContextInterface {
   newsArray?: NewsArticleInterface[];
   setNewsArray?: React.Dispatch<React.SetStateAction<NewsArticleInterface[]>>;
   hotNews?: NewsArticleInterface;
-  changeHotNews?: (num: number) => void;
+  loadMoreNews?: () => void;
+  hasNextPage?: boolean;
 }
