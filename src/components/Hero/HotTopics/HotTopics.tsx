@@ -11,7 +11,7 @@ const HotTopics: React.FC = () => {
 		setTimeout(() => {
 			changeHotNews!(randomNum)
 		}, 5000)
-	}, [])
+	}, [changeHotNews])
 
 	return (
 		<div className='HotTopics'>
