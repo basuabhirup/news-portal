@@ -1,9 +1,19 @@
+:root {
+	--black80: #121221;
+	--black60: #444444;
+	--black20: #949494;
+	--white: #f8f8f8;
+	--background: #e5e5e5;
+}
+
 html {
-  background: #E5E5E5;
-  font-family: 'Roboto', sans-serif; 
+	background: var(--background);
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: 700;
 }
 
 body {
-  margin: 0;
-  padding: 1%;
+	margin: 0;
+	padding: 1% 3%;
 }

@@ -5,7 +5,7 @@
 	color: #949494;
 	font-style: normal;
 	font-weight: 500;
-	font-size: 1rem;
+	font-size: 0.65rem;
 	line-height: 1;
 	text-align: center;
 	width: 100%;
@@ -13,4 +13,10 @@
 
 .Footer p {  
   align-self: center;
+}
+
+@media screen and (min-width: 768px) {
+	.Footer {
+		font-size: 1rem;
+	}
 }

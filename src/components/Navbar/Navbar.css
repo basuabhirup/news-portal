@@ -18,22 +18,19 @@
 .Navbar_Logo {
 	padding: 2% 0;
   text-decoration: none;
-	font-family: 'Raleway', sans-serif;
-	font-style: normal;
-	font-weight: 700;
 	font-size: 1rem;
 	line-height: 1.5rem;
 }
 
 .Navbar_Logo .left {
-	color: #ffffff;
-	background: #121221;
+	color: var(--white);
+	background: var(--black80);
 	border-radius: 4px;
   padding: 0.5rem 0.25rem;
 }
 
 .Navbar_Logo .right {
-  color: #121221;
+  color: var(--black80);
 	border-radius: 4px;
   padding: 0.5rem 0.15rem;
 }
