@@ -1,0 +1,93 @@
+.HotNewsCard_Root {
+	width: 18rem;
+	text-decoration: none;
+  transition: 0.5s;
+}
+
+.HotNewsCard_Root:hover {
+  cursor: pointer;
+  transform: scale(1.025);
+}
+
+.HotNewsCard_Container {
+	width: 100%;
+	border: 1px solid var(--black20);
+	background-size: 110% 110%;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 12rem;
+	border-radius: 8px;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: end;
+}
+
+.HotNewsCard_Container > * {
+	margin-left: 0.25rem;
+	color: var(--white);
+	text-shadow: 3px 1px 4px rgba(30, 30, 30, 1);
+}
+
+.HotNewsCard_Text {
+	font-size: 1rem;
+	line-height: 1.1;
+	margin-bottom: 0;
+}
+
+.HotNewsCard_Time {
+	font-weight: 400;
+	font-size: 0.5rem;
+	line-height: 1.5;
+}
+
+/* Design for Screens wider than 768px */
+
+@media screen and (min-width: 768px) {
+	.HotNewsCard_Root {
+		width: 29.5rem;
+	}
+	.HotNewsCard_Container {
+		height: 20rem;
+	}
+	.HotNewsCard_Text {
+		font-size: 2rem;
+		line-height: 1.25;
+	}
+	.HotNewsCard_Time {
+		font-size: 0.75rem;
+		line-height: 1.5;
+	}
+}
+
+/* Design for Screens wider than 992px */
+
+@media screen and (min-width: 992px) {
+  .HotNewsCard_Root {
+		width: 39rem;
+	}
+	.HotNewsCard_Container {
+		height: 26rem;
+	}
+}
+
+/* Design for Screens wider than 1200px */
+
+@media screen and (min-width: 1200px) {
+  .HotNewsCard_Root {
+		width: 47.5rem;
+	}
+	.HotNewsCard_Container {
+		height: 31rem;
+	}
+}
+
+/* Design for Screens wider than 1380px */
+
+@media screen and (min-width: 1380px) {
+  .HotNewsCard_Root {
+		width: 54em;
+	}
+	.HotNewsCard_Container {
+		height: 34rem;
+	}
+}

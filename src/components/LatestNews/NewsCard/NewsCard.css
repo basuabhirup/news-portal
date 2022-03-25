@@ -8,6 +8,7 @@
 	min-height: 15rem;
 	border-radius: 8px;
 	margin: 0 0.5rem 2rem;
+	transition: 0.5s;
 }
 
 .NewsCard:hover {
@@ -17,11 +18,11 @@
 
 .NewsCard > * {
 	width: 8rem;
-	transition: 0.5s;
   /* border: 1px solid blueviolet; */
 }
 
-.NewsCard_Image {
+.NewsCard_Image {	
+  border: 1px solid var(--black20);
 	background-size: 110% 110%;
 	background-repeat: no-repeat;
 	background-position: center;

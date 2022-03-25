@@ -1,3 +1,20 @@
 .Hero {
-  min-height: 400px;
+	display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+/* .Hero > * {
+	border: 1px solid red;
+} */
+
+/* Design for Screens wider than 768px */
+
+@media screen and (min-width: 768px) {
+  .Hero {    
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: 1fr;
+		grid-column-gap: 1rem;
+  }
 }

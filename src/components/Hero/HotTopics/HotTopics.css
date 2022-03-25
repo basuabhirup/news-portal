@@ -1,0 +1,22 @@
+.HotTopics {
+	grid-area: 1 / 1 / 2 / 3;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	margin: 1rem auto 2rem 0;
+}
+
+.HotTopics > h1 {
+	margin: 1rem 0.5rem 1rem 0;
+	font-size: 2rem;
+	line-height: 1.1;
+	color: var(--black80);
+}
+
+/* Design for Screens wider than 768px */
+
+@media screen and (min-width: 768px) {
+	.HotTopics > h1 {
+		font-size: 3rem;
+	}
+}
