@@ -1,17 +1,10 @@
-import React, { useContext, useEffect } from 'react'
+import React, { useContext } from 'react'
 import './HotTopics.css'
 import NewsContext from '../../../context/NewsContext'
 import HotNewsCard from './HotTopicCard/HotNewsCard'
 
 const HotTopics: React.FC = () => {
-	const { hotNews, changeHotNews } = useContext(NewsContext)
-
-	useEffect(() => {
-		let randomNum = Math.floor(Math.random() * 10)
-		setTimeout(() => {
-			changeHotNews!(randomNum)
-		}, 5000)
-	}, [changeHotNews])
+	const { hotNews } = useContext(NewsContext)
 
 	return (
 		<div className='HotTopics'>
