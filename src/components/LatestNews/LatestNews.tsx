@@ -4,7 +4,7 @@ import NewsContext from '../../context/NewsContext'
 import NewsCard from './NewsCard/NewsCard'
 
 const LatestNews: React.FC = () => {
-	const { newsArray, setNewsArray } = useContext(NewsContext)
+	const { newsArray } = useContext(NewsContext)
 	// console.log(newsArray, setNewsArray)
 
 	return (
