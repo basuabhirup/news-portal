@@ -26,7 +26,6 @@ export const NewsProvider: React.FC = ({
     axios
       .get(url)
       .then((res) => {
-        console.log('init_response')
         setLoading(false)
         if (res.data.status === 'ok') {
           setNewsArray(res.data.articles)
@@ -65,7 +64,6 @@ export const NewsProvider: React.FC = ({
     axios
       .get(url)
       .then((res) => {
-        console.log('later_Response')
         if (res.data.status === 'ok') {
           setNewsArray(newsArray.concat(Array.from(res.data.articles)))
         }
