@@ -1,0 +1,12 @@
+.Weather_Root {
+	border: 2px solid violet;
+}
+
+/* Design for Screens wider than 768px */
+
+@media screen and (min-width: 768px) {
+	.Weather_Root {
+		padding-left: 1.5rem;
+		grid-area: 1 / 3 / 2 / 4;
+	}
+}

@@ -89,8 +89,8 @@ export const NewsProvider: React.FC = ({
   }
 
   return (
-    <NewsContext.Provider value={newsContextData}>
-      {children}
+    <NewsContext.Provider value={ newsContextData }>
+      { children }
     </NewsContext.Provider>
   )
 }

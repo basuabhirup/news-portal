@@ -1,5 +1,4 @@
 .HotTopics {
-	grid-area: 1 / 1 / 2 / 3;
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: center;
@@ -16,6 +15,9 @@
 /* Design for Screens wider than 768px */
 
 @media screen and (min-width: 768px) {
+	.HotTopics {
+		grid-area: 1 / 1 / 2 / 3;
+	}
 	.HotTopics > h1 {
 		font-size: 3rem;
 	}
