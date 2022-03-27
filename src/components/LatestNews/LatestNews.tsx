@@ -8,6 +8,7 @@ const LatestNews: React.FC = () => {
 	const { newsArray, loadMoreNews, hasNextPage } = useContext(NewsContext)
 	const endMsgStyles = {
 		textAlign: 'center',
+		fontSize: '0.75rem',
 		fontWeight: 400,
 		width: '100%',
 		marginTop: 0

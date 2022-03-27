@@ -1,19 +1,17 @@
-import React, { useContext } from 'react'
+import React, {useContext} from 'react'
 import './Weather.css'
 import WeatherContext from '../../../context/WeatherContext'
+import WeatherCard from './WeatherCard/WeatherCard'
 
 const Weather: React.FC = () => {
-	const { weatherData } = useContext(WeatherContext)
+	const {weatherData} = useContext(WeatherContext)
+
 
 	return (
 		<div className='Weather_Root'>
-			Weather
 			<div className='Weather_Cards'>
-				{weatherData?.map((weather) => (
-					<div key={new Date().getTime()} className='Weather_Card'>
-						<span>{weather.temp?.max} &emsp;</span> 
-						<span>{weather.temp?.min}</span>
-					</div>
+				{weatherData?.map((weather, index) => (
+					<WeatherCard weather={weather} index={index}  />
 				))}
 			</div>
 		</div>
