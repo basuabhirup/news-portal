@@ -13,8 +13,8 @@ export const NewsProvider: React.FC = ({
   )
   const [hotNews, setHotNews] = useState<NewsArticleInterface>(newsArray[2])
   const [page, setPage] = useState<number>(1)
-  const [pageSize, setPageSize] = useState<number>(10)
-  const [loading, setLoading] = useState<boolean>(false)
+  const pageSize: number = 10;
+  // const [loading, setLoading] = useState<boolean>(false)
   const [totalResults, setTotalResults] = useState<number>(0)
   const [hasNextPage, setHasNextPage] = useState<boolean>(true)
 
@@ -22,11 +22,9 @@ export const NewsProvider: React.FC = ({
 
   // Get News Array from API
   const getNews = (): void => {
-    setLoading(true)
     axios
       .get(url)
       .then((res) => {
-        setLoading(false)
         if (res.data.status === 'ok') {
           setNewsArray(res.data.articles)
           setTotalResults(res.data.totalResults)
@@ -43,6 +41,7 @@ export const NewsProvider: React.FC = ({
   }
   useEffect(() => {
     getNews()
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   // Checks whether there is a next page everytime the newsArray is updated

@@ -3,7 +3,6 @@ import './Weather.css'
 import WeatherContext from '../../../context/WeatherContext'
 import WeatherCard from './WeatherCard/WeatherCard'
 import SnowSunIcon from '../../../assets/WeatherCard/SnowSun.svg'
-import { WeatherDataInterface } from '../../../utills/interface'
 
 const Weather: React.FC = () => {
 	const { weatherData } = useContext(WeatherContext)
