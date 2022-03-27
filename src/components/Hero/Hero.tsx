@@ -1,13 +1,17 @@
 import React from 'react'
 import './Hero.css'
 import HotTopics from './HotTopics/HotTopics'
+import Weather from './Weather/Weather'
+import { WeatherProvider } from '../../context/WeatherContext'
 
 const Hero: React.FC = () => {
 	return (
-		<div className='Hero'>
-			<div style={{ gridArea: '1 / 3 / 2 / 4' }}>Weather</div>			
-			<HotTopics />
-		</div>
+		<WeatherProvider>
+			<div className='Hero'>
+				<Weather />
+				<HotTopics />
+			</div>
+		</WeatherProvider>
 	)
 }
 
