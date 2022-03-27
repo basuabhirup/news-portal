@@ -2,9 +2,9 @@
 	text-align: center;
 	font-size: 0.75rem;
 	line-height: 1.2;
-	width: 100%;
+  width: 100%;
 	border-radius: 8px;
-	margin: 0.1rem;
+	margin: 0 0.1rem;
 	transition: 0.5s;
 }
 
@@ -19,30 +19,24 @@
 }
 
 .today > .Day {
-  color: var(--primary)
+	color: var(--primary);
 }
 
-.Day, .Temp_Min {
+.Day,
+.Temp_Min {
 	color: var(--faded);
 }
 
 .Day.DesktopOnly {
-  width: 7rem;
-  text-align: left;
-}
-
-.Temp_Min,
-.Temp_Max {
-	width: 3.25rem;
-	text-align: right;
-	margin-left: 0.25rem;
+	width: 7rem;
+	text-align: left;
 }
 
 .SunIcon {
 	display: block;
 	margin: auto;
-	width: 1.75rem;
-	padding: 0 0.25rem;
+	width: 1.55rem;
+	padding: 0 0.45rem;
 }
 
 /* Design for Screens wider than 768px */
@@ -52,18 +46,25 @@
 		display: none;
 	}
 	.Weather_Card {
-		font-size: 1.15rem;
+    width: auto;
+		font-size: 1.12rem;
 		padding: 0 0.5rem;
 		display: flex;
-    justify-content: space-between;
+		justify-content: space-between;
 		flex-grow: 1;
 		flex-shrink: 1;
 	}
-	/* .today {
+	.today {
 		display: none;
-	} */
+	}
 	.Day.DesktopOnly {
 		text-align: left;
+	}
+	.Temp_Min,
+	.Temp_Max {
+		width: 3.25rem;
+		text-align: right;
+		margin-left: 0.25rem;
 	}
 }
 

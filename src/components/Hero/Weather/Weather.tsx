@@ -7,7 +7,9 @@ import { WeatherDataInterface } from '../../../utills/interface'
 
 const Weather: React.FC = () => {
 	const { weatherData } = useContext(WeatherContext)
-
+	// const todayWeather: WeatherDataInterface = weatherData![0]
+	// const todayMaxTemp: number | undefined = todayWeather.temp?.max // 
+	// !--> Facing issue in extracting temp data from the the Weather API
 
 	return (
 		<div className='Weather_Root'>
@@ -21,8 +23,10 @@ const Weather: React.FC = () => {
 			</p>
 			<div className='Weather_Heading DesktopOnly'>
 				<div>
-					<p>{`${Math.floor(54.84)}°C`}</p>
-					<p>Noida, UP, India</p>
+					<p className='Temp_Heading'>{`${Math.floor(
+						 40
+					)}°C`}</p>
+					<p className='Location_Heading'>Noida, UP</p>
 				</div>
 				<img src={SnowSunIcon} alt='Snow-Sun' />
 			</div>

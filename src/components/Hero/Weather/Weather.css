@@ -11,7 +11,7 @@
 
 @media screen and (min-width: 768px) {
 	.Weather_Root {
-		padding-left: 1.5rem;
+		margin-left: 1.55rem;
 		grid-area: 1 / 3 / 2 / 4;
 	}
 	.Date_Heading {
@@ -20,6 +20,7 @@
 		color: var(--primary);
 	}
 	.Weather_Heading {
+		margin: 1rem auto 0;
 		background: var(--white);
 		display: flex;
 		justify-content: space-between;
@@ -27,9 +28,17 @@
 		flex-shrink: 1;
 		border-radius: 8px;
 		transition: 0.5s;
+		padding: 0 2.5rem;
 	}
-	.Weather_Heading > * {
-		margin: 0 0.5rem;
+	.Temp_Heading {
+		font-size: 1.5rem;
+		line-height: 1.25;
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+	.Location_Heading {
+		font-size: 1rem;
+		margin-top: 0.25rem;
 	}
 	.Weather_Heading:hover {
 		cursor: pointer;
@@ -40,8 +49,13 @@
 	}
 }
 
+.Weather_Cards > :nth-last-child(1),
+.Weather_Cards > :nth-last-child(2) {
+	display: none;
+}
+
 @media screen and (max-width: 448px) {
-	.Weather_Cards > :nth-last-child(1) {
-		display: none
+	.Weather_Cards > :nth-last-child(3) {
+		display: none;
 	}
 }

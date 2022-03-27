@@ -19,15 +19,16 @@ export const WeatherProvider: React.FC = ({
 	useEffect(() => {
 		axios
 			.get(
-				`https://api.openweathermap.org/data/2.5/onecall?lat=28.6076&lon=77.3793&units=metric&&exclude=current,minutely,hourly&appid=${process.env.REACT_APP_WEATHER_API_KEY}`
+				`https://api.openweathermap.org/data/2.5/onecall?lat=${'28.6076'}&lon=${'77.3793'}&units=${'metric'}&&exclude=${'current,minutely,hourly'}&appid=${process.env.REACT_APP_WEATHER_API_KEY}`
 			)
 			.then((res) => {
 				if (res.status === 200) {
-          const temp: Array<WeatherDataInterface> = res.data.daily
-          temp.splice(6) // Take data for only next 5 days
-					setWeatherData(temp) // For 'onecall' endpoint
+					setWeatherData(res.data.daily) 
 				}
 			})
+      .catch((err) => {
+        console.error(err)
+      })
 	}, [])
 
 	return (
