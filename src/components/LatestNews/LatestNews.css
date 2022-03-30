@@ -16,6 +16,7 @@
 	flex-flow: row wrap;
 	justify-content: safe;
 	align-items: center;
+	padding: 1rem 0.25rem;
 }
 
 /* Design for Screens wider than 768px */
